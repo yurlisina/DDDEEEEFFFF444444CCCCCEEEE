@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Space Mono', monospace;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        
+        ::selection {
+            background: #c00;
+            color: #000;
+        }
+        
+        .page {
+            max-width: 700px;
+            width: 100%;
+        }
+        
+        .status {
+            color: #c00;
+            font-size: 11px;
+            letter-spacing: 1px;
+            margin-bottom: 60px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        
+        .status span {
+            color: #333;
+        }
+        
+        .title {
+            font-size: 13px;
+            font-weight: 400;
+            color: #666;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .name {
+            font-size: clamp(32px, 8vw, 56px);
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: -1px;
+            margin-bottom: 60px;
+            line-height: 1.1;
+        }
+        
+        .block {
+            margin-bottom: 50px;
+        }
+        
+        .block-title {
+            font-size: 10px;
+            color: #444;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+        
+        .message {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #888;
+            padding-left: 20px;
+            border-left: 2px solid #c00;
+        }
+        
+        .message p {
+            margin-bottom: 20px;
+        }
+        
+        .message p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .tag {
+            color: #c00;
+            font-size: 11px;
+            margin-right: 8px;
+        }
+        
+        .members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .member {
+            font-size: 12px;
+            color: #fff;
+            padding: 10px 20px;
+            border: 1px solid #222;
+            background: transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .member:hover {
+            border-color: #c00;
+        }
+        
+        .data {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .data-item {
+            min-width: 100px;
+        }
+        
+        .data-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #c00;
+            margin-bottom: 5px;
+        }
+        
+        .data-label {
+            font-size: 10px;
+            color: #444;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .footer {
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid #1a1a1a;
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+            color: #333;
+        }
+        
+        .footer a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 500px) {
+            .data { gap: 30px; }
+            .footer { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="status">
+            BREACH #39A2469305A52BF8 <span>// 20/01/2026 00:15</span>
+        </div>
+        
+        <div class="title">owned by</div>
+        <div class="name">KriegGroup</div>
+        
+        <div class="block">
+            <div class="block-title">Message</div>
+            <div class="message">
+                <p><span class="tag">[EN]</span> Your security infrastructure has been compromised. This breach was executed to expose Your Shitty System, Secure your Fucking data</p>
+                <p><span class="tag">[FR]</span> Votre infrastructure de sécurité a été compromise. Cette intrusion a été exécutée pour exposer votre système de merde. Sécurisez vos putains de données ou subissez les conséquences. Nous observons. Nous attendons. Nous n’oublions jamais.</p>
+            </div>
+        </div>
+        
+        <div class="block">
+            <div class="block-title">Crew</div>
+            <div class="members">
+                <div class="member">breach3d</div> <div class="member">Egorgeur2Pedo</div>
+            </div>
+        </div>
+        
+        <div class="block">
+            <div class="block-title">Stats</div>
+            <div class="data">
+                <div class="data-item">
+                    <div class="data-value">100+</div>
+                    <div class="data-label">Breached</div>
+                </div>
+                <div class="data-item">
+                    <div class="data-value">100GB+</div>
+                    <div class="data-label">Exfiltrated</div>
+                </div>
+                <div class="data-item">
+                    <div class="data-value">2024</div>
+                    <div class="data-label">Since</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div>KriegGroup</div>
+            <div>we do not forgive // we do not forget</div>
+        </div>
+    </div>
+</body>
+</html>
